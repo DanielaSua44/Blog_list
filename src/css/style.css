@@ -90,3 +90,51 @@ h1,h2{
     font-weight: 300;
 }
 
+.table{
+    margin:15px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(46, 20, 130);
+    border-radius: 0.5em;
+}
+
+.btn-danger{
+    background-color: rgb(158, 13, 13);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: rgb(78, 78, 72);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    padding: 5px;
+}
+
+.btn-success{
+    background-color: rgb(9, 128, 47);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-text{
+    font-size:1em;
+    font-weight: 300;
+    color: rgb(46, 20, 130);
+}
+

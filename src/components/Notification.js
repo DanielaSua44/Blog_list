@@ -5,8 +5,8 @@ const Notification = ({notification}) => {
         return null
     }
     const style = {
-        color:notification.type === 'alert' ? 'green' : 'red',
-        backgroundColor:notification.type === 'alert' ? 'lightgreen' : 'pink',
+        color:notification.type === 'error' ? 'red' : 'green',
+        backgroundColor:notification.type === 'error' ? 'pink' : 'lightblue',
         fontSize: '20px',
         borderStyle: 'solid',
         borderRadius: '5px',

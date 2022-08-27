@@ -15,7 +15,7 @@ const create = async (newBlog) => {
     const response = await axios.post(baseUrl, newBlog, config)
     return response.data
   } catch (error) {
-    console.log(error.response.data.error)
+    console.log(error)
   }
 
 }
@@ -25,5 +25,20 @@ const getAll = () => {
   return request.then(response => response.data)
 }
 
+const getById = async (id) => {
+  const response = await axios.get(`${baseUrl}/${id}`)
+  return response.data
+}
+
+const update = async (id, newObject) => {
+  const response = await axios.put(`${baseUrl}/${id}`, newObject)
+  return response.data
+}
+
+const remove = async (id) => {
+  const response = await axios.delete(`${baseUrl}/${id}`)
+  return response.data
+}
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { getAll, setToken, create }
+export default { getAll, setToken, create, getById, update, remove }
